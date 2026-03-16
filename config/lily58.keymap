@@ -175,7 +175,7 @@
         ht_alt_gui: hold_tap_alt_gui {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_ALT_GUI";
-            #binding-cells = <2>;
+            #binding-cells = <4>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
@@ -185,7 +185,7 @@
         ht_gui_alt: hold_tap_gui_alt {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_GUI_ALT";
-            #binding-cells = <2>;
+            #binding-cells = <4>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
