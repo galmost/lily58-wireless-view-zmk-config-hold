@@ -171,26 +171,6 @@
             quick-tap-ms = <150>;
             bindings = <&kp>, <&kp>;
         };
-
-        ht_alt_gui: hold_tap_alt_gui {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP_ALT_GUI";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
-            bindings = <&kp>, <&kp>; 
-        };
-
-        ht_gui_alt: hold_tap_gui_alt {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP_GUI_ALT";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
-            bindings = <&kp>, <&kp>;
-        };
     };
 
     keymap {
@@ -212,8 +192,8 @@
             // |  CTRL    |   Z    |   X    |   C    |   V    |   B    |  [/-   |  ]/=   |            |   N    |   M    |   ,    |   .    |   /    |  PG_DN    |
                &kp LCTRL  &kp Z    &kp X    &kp C    &kp V    &kp B    &ht_lbkt_minus MINUS LBKT &ht_rbkt_equal EQUAL RBKT &kp N    &kp M    &kp COMMA &kp DOT &kp FSLH &kp PG_DN
         
-            //                            |  LGUI  |  ALT   |   HIGH   | SPACE  |     | SPACE  | RIGHT  | LAYER3 | MMEDIA |
-                            &ht_gui_alt LGUI LALT   &ht_alt_gui LALT LGUI &mo 1  &kp SPACE      &kp SPACE  &mo 2    &mo 3  &mo 4
+            //                            |  LGUI  |  ALT   | HIGH   | SPACE  |     | SPACE  | RIGHT  | LAYER3 | MMEDIA |
+                                         &kp LGUI &kp LALT &mo 1    &kp SPACE     &kp SPACE  &mo 2    &mo 3  &mo 4
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
