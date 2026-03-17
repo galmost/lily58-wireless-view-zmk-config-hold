@@ -179,7 +179,7 @@
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
-            bindings = <&kp LALT>, <&kp LGUI>;
+            bindings = <&kp>, <&kp>; 
         };
 
         ht_gui_alt: hold_tap_gui_alt {
@@ -189,7 +189,7 @@
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
-            bindings = <&kp LGUI>, <&kp LALT>;
+            bindings = <&kp>, <&kp>;
         };
     };
 
